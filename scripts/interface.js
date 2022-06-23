@@ -32,10 +32,8 @@ function updateSquare(position) {
 function resetGame() {
   board.forEach((element, index) => {
     board[index] = ''
+    uptadeSquare(index)
   })
   playerTime = 0
   gameOver = false
-  board.forEach((element, index) => {
-    updateSquare(index)
-  })
 }
